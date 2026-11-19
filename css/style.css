@@ -1,0 +1,20 @@
+/* Baking Studio colours — Bootstrap 6 theme overrides */
+:root {
+    --bs-primary: #97506b;
+    --bs-primary-rgb: 151, 80, 107;
+    --bs-theme-primary: #97506b;
+}
+.theme-primary {
+    --bs-theme: #97506b;
+    --bs-theme-rgb: 151, 80, 107;
+}
+.btn-solid.theme-primary {
+    background-color: #97506b;
+    border-color: #97506b;
+    color: #ffffff;
+}
+.btn-solid.theme-primary:hover {
+    background-color: #75384f;
+    border-color: #75384f;
+    color: #ffffff;
+}

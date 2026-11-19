@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | The Baking Studio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar md:navbar-expand bg-1 fg-2" aria-label="Main navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">The Baking Studio</a>
+            <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#siteMenu" aria-controls="siteMenu" aria-expanded="false" aria-label="Open menu">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+            <dialog class="drawer drawer-end" tabindex="-1" id="siteMenu" aria-labelledby="siteMenuTitle">
+                <div class="drawer-header">
+                    <h2 class="drawer-title" id="siteMenuTitle">Navigation</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close menu"></button>
+                </div>
+                <div class="drawer-body">
+                    <ul class="navbar-nav me-auto mb-2 md:mb-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Recipes</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </dialog>
+        </div>
+    </nav>
+    <main class="container py-5">
+        <h1>Contact The Baking Studio</h1>
+        <p class="mb-4">Have a recipe question or a baking idea to share? Send us a message.</p>
+
+        <form action="#" method="get" class="row g-4">
+            <div class="col-12 md:col-6">
+                <div class="form-field">
+                    <label for="firstName">First Name</label>
+                    <input class="form-control" id="firstName" name="firstName" type="text" required>
+                </div>
+            </div>
+
+            <div class="col-12 md:col-6">
+                <div class="form-field">
+                    <label for="lastName">Last Name</label>
+                    <input class="form-control" id="lastName" name="lastName" type="text" required>
+                </div>
+            </div>
+
+            <div class="col-12 md:col-6">
+                <div class="form-field">
+                    <label for="email">Email Address</label>
+                    <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" required>
+                </div>
+            </div>
+
+            <div class="col-12 md:col-6">
+                <div class="form-field">
+                    <label for="topic">What is your message about?</label>
+                    <select class="form-control" id="topic" name="topic" required>
+                        <option value="">Choose a topic</option>
+                        <option value="recipes">Recipe Question</option>
+                        <option value="community">Recipes Events</option>
+                        <option value="feedback">Website Feedback</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="form-field">
+                    <label for="message">Your Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="check">
+                    <input class="check-input" type="checkbox" id="consent" name="consent" required>
+                    <label class="check-label" for="consent">I agree to be contacted about my message.</label>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn-solid theme-primary">Send Message</button>
+                <p class="mt-2">This is a sample form for the class website. It does not send messages to a server.</p>
+            </div>
+        </form>
+    </main>
+    <footer class="bg-1 py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 The Baking Studio. Made for people who love baking.</p>
+        </div>
+    </footer>
+    <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
